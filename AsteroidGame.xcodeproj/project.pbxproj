@@ -10,9 +10,9 @@
 		18399A611A0AB47B003E0ECE /* SpaceBackground in Resources */ = {isa = PBXBuildFile; fileRef = 18399A601A0AB47B003E0ECE /* SpaceBackground */; };
 		18399A621A0AB47B003E0ECE /* SpaceBackground in Resources */ = {isa = PBXBuildFile; fileRef = 18399A601A0AB47B003E0ECE /* SpaceBackground */; };
 		18399A631A0AB47B003E0ECE /* SpaceBackground in Resources */ = {isa = PBXBuildFile; fileRef = 18399A601A0AB47B003E0ECE /* SpaceBackground */; };
-		18399A691A0AB889003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A681A0AB889003E0ECE /* published */; };
-		18399A6A1A0AB889003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A681A0AB889003E0ECE /* published */; };
-		18399A6B1A0AB889003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A681A0AB889003E0ECE /* published */; };
+		18399A701A0ABDF2003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A6F1A0ABDF2003E0ECE /* published */; };
+		18399A711A0ABDF2003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A6F1A0ABDF2003E0ECE /* published */; };
+		18399A721A0ABDF2003E0ECE /* published in Resources */ = {isa = PBXBuildFile; fileRef = 18399A6F1A0ABDF2003E0ECE /* published */; };
 		18F5826A1A0AA92000EA58FF /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F582691A0AA92000EA58FF /* GameLogic.m */; };
 		18F5826B1A0AA92000EA58FF /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F582691A0AA92000EA58FF /* GameLogic.m */; };
 		18F5826C1A0AA92000EA58FF /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F582691A0AA92000EA58FF /* GameLogic.m */; };
@@ -191,7 +191,7 @@
 
 /* Begin PBXFileReference section */
 		18399A601A0AB47B003E0ECE /* SpaceBackground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SpaceBackground; sourceTree = "<group>"; };
-		18399A681A0AB889003E0ECE /* published */ = {isa = PBXFileReference; lastKnownFileType = folder; path = published; sourceTree = "<group>"; };
+		18399A6F1A0ABDF2003E0ECE /* published */ = {isa = PBXFileReference; lastKnownFileType = folder; path = published; sourceTree = "<group>"; };
 		18F582681A0AA92000EA58FF /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
 		18F582691A0AA92000EA58FF /* GameLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
 		6E03796719A7BDF000B70D4A /* INDIVIDUAL_IMAGES_EXAMPLE */ = {isa = PBXFileReference; lastKnownFileType = folder; name = INDIVIDUAL_IMAGES_EXAMPLE; path = Demo/INDIVIDUAL_IMAGES_EXAMPLE; sourceTree = "<group>"; };
@@ -410,7 +410,7 @@
 		6E89FCEA192E0A390040478F = {
 			isa = PBXGroup;
 			children = (
-				18399A681A0AB889003E0ECE /* published */,
+				18399A6F1A0ABDF2003E0ECE /* published */,
 				18399A601A0AB47B003E0ECE /* SpaceBackground */,
 				6E42834D19A49B2E0060CFE3 /* Box2D.xcodeproj */,
 				6E42835619A49B390060CFE3 /* LevelHelper2-API.xcodeproj */,
@@ -631,7 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E72A6081983747F00143439 /* Info-Box2d.plist in Resources */,
-				18399A6A1A0AB889003E0ECE /* published in Resources */,
+				18399A711A0ABDF2003E0ECE /* published in Resources */,
 				6E72A60B1983747F00143439 /* InfoPlist.strings in Resources */,
 				6E03796A19A7BDF000B70D4A /* INDIVIDUAL_IMAGES_EXAMPLE in Resources */,
 				18399A621A0AB47B003E0ECE /* SpaceBackground in Resources */,
@@ -646,7 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E89FD0F192E0A390040478F /* Main_iPad.storyboard in Resources */,
-				18399A6B1A0AB889003E0ECE /* published in Resources */,
+				18399A721A0ABDF2003E0ECE /* published in Resources */,
 				6E89FD0C192E0A390040478F /* Main_iPhone.storyboard in Resources */,
 				6E03796B19A7BDF000B70D4A /* INDIVIDUAL_IMAGES_EXAMPLE in Resources */,
 				18399A631A0AB47B003E0ECE /* SpaceBackground in Resources */,
@@ -667,7 +667,7 @@
 				6E03796919A7BDF000B70D4A /* INDIVIDUAL_IMAGES_EXAMPLE in Resources */,
 				6E5E4A4C1978CEF200DEFB02 /* Main_iPhone.storyboard in Resources */,
 				6E03796C19A7BDF000B70D4A /* PUBLISH_FOLDER in Resources */,
-				18399A691A0AB889003E0ECE /* published in Resources */,
+				18399A701A0ABDF2003E0ECE /* published in Resources */,
 				6EBEA3341959BFD000726044 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

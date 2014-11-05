@@ -23,19 +23,19 @@
 					<key>colorOverlay</key>
 					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
 					<key>generalPosition</key>
-					<string>{0.848690, 0.562697}</string>
+					<string>{0.907150, 0.474944}</string>
 					<key>imageFileName</key>
-					<string>bg_parallax_stars_1536x3840.png</string>
+					<string>bg_parallax_stars-ipad@2x-736.png</string>
 					<key>invisibleInEditor</key>
 					<false/>
 					<key>name</key>
-					<string>bg_parallax_stars_1536x3840_1</string>
+					<string>bg_parallax_stars-ipad@2x-736_1</string>
 					<key>nodeType</key>
 					<string>LHSprite</string>
 					<key>parentUUID</key>
 					<string>_BACK_USER_INTERFACE_NODE_UUID_</string>
 					<key>relativeImagePath</key>
-					<string>SpaceBackground/bg 1536x3840/</string>
+					<string>SpaceBackground/</string>
 					<key>rotation</key>
 					<real>0.0</real>
 					<key>scale</key>
@@ -47,7 +47,7 @@
 						<string>DEFAULT</string>
 					</array>
 					<key>uuid</key>
-					<string>3EEC51CE-44CF-4A41-8B0A-415D385F4633</string>
+					<string>C3C89B74-D5E6-439E-896E-FD92EFC62924</string>
 					<key>zOrder</key>
 					<integer>0</integer>
 				</dict>
@@ -59,19 +59,19 @@
 					<key>colorOverlay</key>
 					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
 					<key>generalPosition</key>
-					<string>{0.049531, 0.562173}</string>
+					<string>{0.110512, 0.475668}</string>
 					<key>imageFileName</key>
-					<string>bg_parallax_stars_1536x3840.png</string>
+					<string>bg_parallax_stars-ipad@2x-736.png</string>
 					<key>invisibleInEditor</key>
 					<false/>
 					<key>name</key>
-					<string>bg_parallax_stars_1536x3840</string>
+					<string>bg_parallax_stars-ipad@2x-736</string>
 					<key>nodeType</key>
 					<string>LHSprite</string>
 					<key>parentUUID</key>
 					<string>_BACK_USER_INTERFACE_NODE_UUID_</string>
 					<key>relativeImagePath</key>
-					<string>SpaceBackground/bg 1536x3840/</string>
+					<string>SpaceBackground/</string>
 					<key>rotation</key>
 					<real>0.0</real>
 					<key>scale</key>
@@ -83,7 +83,7 @@
 						<string>DEFAULT</string>
 					</array>
 					<key>uuid</key>
-					<string>14468314-AC2C-4AB9-9983-AE0B9FFC9161</string>
+					<string>E95FEA74-AF88-466C-8A01-8F9EA908B94E</string>
 					<key>zOrder</key>
 					<integer>0</integer>
 				</dict>
@@ -150,7 +150,7 @@
 						<key>fixedRotation</key>
 						<false/>
 						<key>fixtureUUID</key>
-						<string>593518E0-8A7A-4397-9898-56641AF746B1</string>
+						<string>22EB7EBC-97C2-4DD7-AFE5-013B1E0541B7</string>
 						<key>genericFixture</key>
 						<dict>
 							<key>category</key>
@@ -175,7 +175,7 @@
 							<false/>
 						</dict>
 						<key>gravityScale</key>
-						<real>1</real>
+						<real>0.0</real>
 						<key>linearDamping</key>
 						<real>0.0</real>
 						<key>linearVelocity</key>
@@ -332,6 +332,12 @@
 	<dict>
 		<key>1024x768</key>
 		<string>{{0.000000, 0.000000}, {1.000000, 1.000000}}</string>
+		<key>1334x750</key>
+		<string>{{0.000000, 0.000000}, {1.000000, 1.000000}}</string>
+		<key>2048x1536</key>
+		<string>{{0.000000, 0.000000}, {1.000000, 1.000000}}</string>
+		<key>960x640</key>
+		<string>{{0.000000, 0.000000}, {1.000000, 1.000000}}</string>
 		<key>general</key>
 		<string>{{0.000000, 0.000000}, {1.000000, 1.000000}}</string>
 	</dict>
@@ -343,7 +349,7 @@
 	</array>
 	<key>tracedFixtures</key>
 	<dict>
-		<key>593518E0-8A7A-4397-9898-56641AF746B1</key>
+		<key>22EB7EBC-97C2-4DD7-AFE5-013B1E0541B7</key>
 		<array>
 			<array>
 				<string>{-33.5, -6.5}</string>
@@ -435,7 +441,7 @@
 				<string>{35.5, 23.5}</string>
 			</array>
 		</array>
-		<key>64771EA9-F0FA-4EEB-9C71-77BF57C95A5B</key>
+		<key>29B3DA26-0B79-45D9-A12A-6A9622A3C26E</key>
 		<array>
 			<array>
 				<string>{-39.75, -30.75}</string>
