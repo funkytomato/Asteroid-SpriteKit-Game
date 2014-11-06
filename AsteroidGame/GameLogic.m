@@ -21,7 +21,7 @@
     {
         /*INIT YOUR CONTENT HERE*/
         
-        [self rotateLeft];
+        //[self rotateLeft];
         
         //[self rotateRight];
         
@@ -64,26 +64,22 @@
     node.physicsBody.angularVelocity = 0.0;
     
     CGFloat rotation = 0.0;
-    rotation =  node.zRotation;
+    rotation = node.zRotation;
     
-    int x = 0;
-    int y = 0;
+    CGFloat heading = 45.0 - rotation;
+    
+    int f = 1;
+    CGFloat fx = 0;
+    CGFloat fy = 0;
+
+    fy = f * cos(heading);
+    fx = f * sin(heading);
+    
+    NSLog(@"Rotation: %f  fx : %f  fy: %f",fx,fy);
+    
 
     
-    if (rotation == 0)
-    {
-        x = 0;
-        y = 0;
-    }
-    else if (rotation == 45)
-    {
-        x = 10;
-        y = 10;
-    }
-    else
-        NSLog(@"Failed on heading");
-    
-    [node.physicsBody applyImpulse: CGVectorMake(x,y)];
+    [node.physicsBody applyImpulse: CGVectorMake(fx,fy)];
 
     NSLog(@"%@ velocity x:%f y:%f angular velocity: %f",node.name, node.physicsBody.velocity.dx, node.physicsBody.velocity.dy, node.physicsBody.angularVelocity);
 
