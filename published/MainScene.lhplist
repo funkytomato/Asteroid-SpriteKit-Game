@@ -144,13 +144,13 @@
 						<key>angularDamping</key>
 						<real>0.0</real>
 						<key>angularVelocity</key>
-						<real>0.30000001192092896</real>
+						<real>0.0</real>
 						<key>bullet</key>
 						<false/>
 						<key>fixedRotation</key>
 						<false/>
 						<key>fixtureUUID</key>
-						<string>22EB7EBC-97C2-4DD7-AFE5-013B1E0541B7</string>
+						<string>9BA81D4F-B975-47AF-BF30-89A833BC3B28</string>
 						<key>genericFixture</key>
 						<dict>
 							<key>category</key>
@@ -192,7 +192,7 @@
 					<key>relativeImagePath</key>
 					<string>published/</string>
 					<key>rotation</key>
-					<real>0.0</real>
+					<real>359.92868041992188</real>
 					<key>scale</key>
 					<string>{1.000000, 1.000000}</string>
 					<key>size</key>
@@ -208,7 +208,7 @@
 					<key>uuid</key>
 					<string>C5E622E9-952E-4735-8724-8A859ACE0588</string>
 					<key>zOrder</key>
-					<integer>0</integer>
+					<integer>1</integer>
 				</dict>
 			</array>
 			<key>colorOverlay</key>
@@ -243,6 +243,169 @@
 			<real>255</real>
 			<key>anchor</key>
 			<string>{0.500000, 0.500000}</string>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
+					<string>{0.103880, 0.837509}</string>
+					<key>imageFileName</key>
+					<string>CookiesSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>LeftBtn</string>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_USER_INTERFACE_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{0.691405, 0.699852}</string>
+					<key>size</key>
+					<string>{275.000000, 270.000000}</string>
+					<key>spriteName</key>
+					<string>pastry_cookie02_320@2x</string>
+					<key>spriteUUID</key>
+					<string>A0AB7FFC-321F-4A70-8854-5E29882E029E</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>72FC89FB-0B60-4808-A921-41D27433A327</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
+					<string>{0.884167, 0.821099}</string>
+					<key>imageFileName</key>
+					<string>CookiesSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>RightBtn</string>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_USER_INTERFACE_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{0.679330, 0.713229}</string>
+					<key>size</key>
+					<string>{275.000000, 270.000000}</string>
+					<key>spriteName</key>
+					<string>pastry_cookie02_320@2x</string>
+					<key>spriteUUID</key>
+					<string>A0AB7FFC-321F-4A70-8854-5E29882E029E</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>E9A2F79A-561A-47AB-99E9-B0CB65D36904</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
+					<string>{0.103741, 0.162717}</string>
+					<key>imageFileName</key>
+					<string>CookiesSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>ThrusterBtn</string>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_USER_INTERFACE_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{0.691405, 0.699852}</string>
+					<key>size</key>
+					<string>{275.000000, 270.000000}</string>
+					<key>spriteName</key>
+					<string>pastry_cookie02_320@2x</string>
+					<key>spriteUUID</key>
+					<string>A0AB7FFC-321F-4A70-8854-5E29882E029E</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>3CD8BF17-F9E4-42EC-BCEB-ED7354E92E43</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
+					<string>{0.889802, 0.166766}</string>
+					<key>imageFileName</key>
+					<string>CookiesSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>FireBtn</string>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_USER_INTERFACE_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{0.691405, 0.699852}</string>
+					<key>size</key>
+					<string>{275.000000, 270.000000}</string>
+					<key>spriteName</key>
+					<string>pastry_cookie02_320@2x</string>
+					<key>spriteUUID</key>
+					<string>A0AB7FFC-321F-4A70-8854-5E29882E029E</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>ADB18182-02C9-4D83-8805-3A67C24AD62E</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+			</array>
 			<key>colorOverlay</key>
 			<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
 			<key>generalPosition</key>
@@ -349,7 +512,7 @@
 	</array>
 	<key>tracedFixtures</key>
 	<dict>
-		<key>22EB7EBC-97C2-4DD7-AFE5-013B1E0541B7</key>
+		<key>9BA81D4F-B975-47AF-BF30-89A833BC3B28</key>
 		<array>
 			<array>
 				<string>{-33.5, -6.5}</string>
@@ -439,64 +602,6 @@
 				<string>{-18, 23.5}</string>
 				<string>{-7.5, 21}</string>
 				<string>{35.5, 23.5}</string>
-			</array>
-		</array>
-		<key>29B3DA26-0B79-45D9-A12A-6A9622A3C26E</key>
-		<array>
-			<array>
-				<string>{-39.75, -30.75}</string>
-				<string>{-36.25, -33.25}</string>
-				<string>{-40.25, -27.75}</string>
-			</array>
-			<array>
-				<string>{11.25, -30.25}</string>
-				<string>{11.25, -28.25}</string>
-				<string>{-35.75, -33.75}</string>
-				<string>{6.75, -33.75}</string>
-				<string>{9.75, -32.25}</string>
-			</array>
-			<array>
-				<string>{83.25, 11.25}</string>
-				<string>{83.25, 28.75}</string>
-				<string>{18.25, -15.75}</string>
-				<string>{43.25, -12.75}</string>
-				<string>{53.25, -9.75}</string>
-				<string>{64.75, -4.25}</string>
-				<string>{76.25, 4.25}</string>
-			</array>
-			<array>
-				<string>{-82.75, 30.75}</string>
-				<string>{-83.75, 27.75}</string>
-				<string>{-83.75, -0.75}</string>
-				<string>{-82.75, -3.25}</string>
-				<string>{-45.75, -15.75}</string>
-				<string>{80.25, 32.75}</string>
-				<string>{-79.25, 33.25}</string>
-				<string>{-80.75, 32.75}</string>
-			</array>
-			<array>
-				<string>{82.75, 30.25}</string>
-				<string>{80.25, 32.75}</string>
-				<string>{-45.75, -15.75}</string>
-				<string>{-36.25, -33.25}</string>
-				<string>{-35.75, -33.75}</string>
-				<string>{18.25, -15.75}</string>
-				<string>{83.25, 28.75}</string>
-			</array>
-			<array>
-				<string>{11.25, -28.25}</string>
-				<string>{18.25, -15.75}</string>
-				<string>{-35.75, -33.75}</string>
-			</array>
-			<array>
-				<string>{-53.75, -15.75}</string>
-				<string>{-45.75, -15.75}</string>
-				<string>{-82.75, -3.25}</string>
-			</array>
-			<array>
-				<string>{-40.25, -27.75}</string>
-				<string>{-36.25, -33.25}</string>
-				<string>{-45.75, -15.75}</string>
 			</array>
 		</array>
 	</dict>
