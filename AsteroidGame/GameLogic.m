@@ -10,6 +10,7 @@
 
 @implementation GameLogic {
     BOOL FirstPass;
+    BOOL didChangeX;
 }
 
 +(id)scene
@@ -29,7 +30,7 @@
         
         //[self rotateRight];
         
-        [self thruster];
+        //[self thruster];
         
     }
     
@@ -83,8 +84,8 @@
 {
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
     
-    node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
-    node.physicsBody.angularVelocity = 0.0;
+    //node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
+    //node.physicsBody.angularVelocity = 0.0;
     
     CGFloat rotation = 0.0;
     rotation = node.zRotation;
@@ -98,7 +99,7 @@
     fy = f * cos(heading);
     fx = f * sin(heading);
     
-    NSLog(@"Rotation: %f  fx : %f  fy: %f",fx,fy);
+    NSLog(@"Heading: %f  fx : %f  fy: %f",heading,fx,fy);
     
 
     
@@ -106,6 +107,11 @@
 
     NSLog(@"%@ velocity x:%f y:%f angular velocity: %f",node.name, node.physicsBody.velocity.dx, node.physicsBody.velocity.dy, node.physicsBody.angularVelocity);
 
+}
+
+-(void)fire
+{
+    
 }
 
 -(void)handleSpaceship:(SKNode*)spaceship collisionWithNode:(SKNode*)node
@@ -120,7 +126,43 @@
         }
     }
 }
-/*
+
+- (void)messWithGravity
+{
+    CGPoint curGravity = [self globalGravity];
+    if(didChangeX){
+        [self setGlobalGravity:CGPointMake(curGravity.x, -curGravity.y)];
+        didChangeX = false;
+    }
+    else{
+        didChangeX = true;
+        [self setGlobalGravity:CGPointMake(-curGravity.x, curGravity.y)];
+    }
+    
+    NSLog(@"Gravity x:%f y:%f", curGravity.x, curGravity.y);
+}
+
+-(void)handleLabelsAtLocation:(CGPoint)location
+{
+    NSArray* nodes = [self nodesAtPoint:location];
+    for(SKNode* node in nodes)
+    {
+        //if fire button touched, bring the rain
+        if ([node.name isEqualToString:@"LeftBtn"]) {
+            [self rotateLeft];
+        }
+        if ([node.name isEqualToString:@"RightBtn"]) {
+            [self rotateRight];
+        }
+        if ([node.name isEqualToString:@"FireBtn"]) {
+            [self fire];
+        }
+        if ([node.name isEqualToString:@"ThrusterBtn"]) {
+            [self thruster];
+        }
+        
+    }
+}
 
 #if LH_USE_BOX2D
 
@@ -186,15 +228,18 @@
 }
 
 #endif
-*/
+
 
 #if TARGET_OS_IPHONE
+
+
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
     
-    [self handleBodiesAtLocation:location];
+    [self handleLabelsAtLocation:location];
     
     //dont forget to call super
     [super touchesBegan:touches withEvent:event];
@@ -206,36 +251,51 @@
     
     CGPoint location = [theEvent locationInNode:self];
     
-    [self handleBodiesAtLocation:location];
+    [self handleLabelsAtLocation:location];
     
     [super mouseDown:theEvent];
 }
 
 #endif
 
+- (void)handleRotation:(CGPoint)location
+{
+    //Add movement rotating left and right by clicking on the left or right of the spaceship
+    
+    LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
+    node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
+    
+    if (node.position.x < location.x)
+    {
+        NSLog(@"Rotate Right X");
+        [self rotateRight];
+    }
+    else if (node.position.x > location.x)
+    {
+        NSLog(@"Rotate Left X");
+        [self rotateLeft];
+    }
+    else if (node.position.y < location.y)
+    {
+        NSLog(@"Rotate Left Y");
+        [self rotateLeft];
+    }
+    else if (node.position.y > location.y)
+    {
+        NSLog(@"Rotate Right Y");
+        [self rotateRight];
+    }
+}
+
 -(void)handleBodiesAtLocation:(CGPoint)location
 {
     NSLog(@"................................................");
-    //    {//position test
-    //        SKNode* node = [self childNodeWithName:@"candy"];
-    //        NSLog(@"SET SPRITE %@ POSITION TO %f %f", [node name], location.x, location.y);
-    //        [node setPosition:location];
-    //    }
-    //
-    //    {//rotation test
-    //        SKNode* node = [self childNodeWithName:@"statue"];
-    //
-    //        float zRot = [node zRotation] -  0.785398163/*45deg*/;
-    //
-    //        NSLog(@"SET SPRITE %@ ROTATION TO %f", [node name], zRot);
-    //        [node setZRotation:zRot];
-    //    }
+    
     
     //[self rotateLeft];
-    [self rotateRight];
-    [self thruster];
+    //[self rotateRight];
+    //[self thruster];
     
 }
-
 
 @end
