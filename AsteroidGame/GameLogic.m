@@ -26,12 +26,6 @@
         
         FirstPass = YES;
         
-        //[self rotateLeft];
-        
-        //[self rotateRight];
-        
-        //[self thruster];
-        
     }
     
     return self;
@@ -84,12 +78,8 @@
 {
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
     
-    //node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
-    //node.physicsBody.angularVelocity = 0.0;
-    
     CGFloat rotation = 0.0;
     rotation = node.zRotation;
-    
     CGFloat heading = 45.0 - rotation;
     
     int f = 2;
@@ -111,7 +101,21 @@
 
 -(void)fire
 {
+  
+    //Create a laser sprite at Spaceship location
+    LHSprite* laser = [LHSprite new];
+    [laser setSpriteFrameWithName:@"attack_laser_blue.png"];
+    [self addChild:laser];
     
+    //Get heading of spaceship
+    
+    //Set laser sprite rotation to spaceship heading
+    
+    //Create laser sprite physics body
+    
+    //Set velocity of laser sprite
+    
+    //ApplyImpulse to laser sprite
 }
 
 -(void)handleSpaceship:(SKNode*)spaceship collisionWithNode:(SKNode*)node
@@ -263,7 +267,7 @@
     //Add movement rotating left and right by clicking on the left or right of the spaceship
     
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
-    node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
+    //node.physicsBody.velocity = CGVectorMake(0.0, 0.0);
     
     if (node.position.x < location.x)
     {
