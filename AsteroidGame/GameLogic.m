@@ -11,6 +11,8 @@
 @implementation GameLogic {
     BOOL FirstPass;
     BOOL didChangeX;
+    
+    CGFloat SpaceshipHeading;
 }
 
 +(id)scene
@@ -25,27 +27,31 @@
         /*INIT YOUR CONTENT HERE*/
         
         FirstPass = YES;
+        SpaceshipHeading = 0.785398163;
         
     }
     
     return self;
 }
 
+- (CGFloat)calculateHeading:(LHNode *)node amount:(CGFloat)value
+{
+    if (FirstPass)
+    {
+        SpaceshipHeading = 0.785398163;
+        FirstPass = NO;
+    }
+    else
+        SpaceshipHeading = node.zRotation + value;
+    return SpaceshipHeading;
+}
+
 -(void)rotateLeft
 {
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
 
-    CGFloat rotation = 0.0;
-    if (FirstPass)
-    {
-        rotation = 0.0;
-        FirstPass = NO;
-    }
-    else
-        rotation = node.zRotation;
-    
-    rotation = rotation + 0.785398163/*45deg*/;
-    //rotation = rotation + 45.0;
+    CGFloat rotation;
+    rotation = [self calculateHeading:node amount:(0.785398163/*45deg*/)];
     node.zRotation = rotation;
     
     NSLog(@"Rotating %@  %f degrees",node.name, rotation);
@@ -57,17 +63,7 @@
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
   
     CGFloat rotation = 0.0;
-    if (FirstPass)
-    {
-        rotation = 0.0;
-            FirstPass = NO;
-    }
-    else
-        rotation = node.zRotation;
-    
-
-    rotation = rotation - 0.785398163/*45deg*/;
-    //rotation = rotation - 45.0;
+    rotation = [self calculateHeading:node amount:-0.785398163/*45deg*/];
     node.zRotation = rotation;
     
     NSLog(@"Rotating %@  %f degrees",node.name, rotation);
@@ -80,7 +76,7 @@
     
     CGFloat rotation = 0.0;
     rotation = node.zRotation;
-    CGFloat heading = 45.0 - rotation;
+    CGFloat heading = 0.785398163 - rotation;
     
     int f = 2;
     CGFloat fx = 0;
@@ -101,21 +97,32 @@
 
 -(void)fire
 {
-  
-    //Create a laser sprite at Spaceship location
-    LHSprite* laser = [LHSprite new];
-    [laser setSpriteFrameWithName:@"attack_laser_blue.png"];
-    [self addChild:laser];
-    
     //Get heading of spaceship
+    LHNode* spaceship = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
+    CGFloat spaceshipHeading = spaceship.zRotation + (0.785398163*2);
+    
+    //Get laser sprite at Spaceship location
+    LHNode* laser = (LHNode*)[[self gameWorldNode] childNodeWithName:@"laser"];
+    CGPoint position = spaceship.position;
+    position.x = position.x + 50;
+    laser.position = position;
     
     //Set laser sprite rotation to spaceship heading
+    laser.zRotation = SpaceshipHeading;
     
-    //Create laser sprite physics body
+    //Calculate angle of impulse
+    int f = 10;
+    CGFloat fx = 0;
+    CGFloat fy = 0;
     
-    //Set velocity of laser sprite
+    fy = f * cos(spaceshipHeading);
+    fx = f * sin(spaceshipHeading);
+    
     
     //ApplyImpulse to laser sprite
+    [laser.physicsBody applyImpulse: CGVectorMake(fx,fy)];
+
+    NSLog(@"Heading: %f  fx : %f  fy: %f",spaceshipHeading,fx,fy);
 }
 
 -(void)handleSpaceship:(SKNode*)spaceship collisionWithNode:(SKNode*)node
