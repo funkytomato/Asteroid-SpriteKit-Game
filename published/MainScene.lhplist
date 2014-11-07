@@ -130,6 +130,182 @@
 					<key>colorOverlay</key>
 					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
 					<key>generalPosition</key>
+					<string>{0.363764, 0.923865}</string>
+					<key>imageFileName</key>
+					<string>WeaponsFireSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>laser</string>
+					<key>nodePhysics</key>
+					<dict>
+						<key>allowSleep</key>
+						<true/>
+						<key>angularDamping</key>
+						<real>0.0</real>
+						<key>angularVelocity</key>
+						<real>0.0</real>
+						<key>bullet</key>
+						<true/>
+						<key>fixedRotation</key>
+						<true/>
+						<key>fixtureUUID</key>
+						<string>B3B2C3AE-5968-400D-B0F5-BDFAB4DD5DBC</string>
+						<key>genericFixture</key>
+						<dict>
+							<key>category</key>
+							<integer>4</integer>
+							<key>categoryName</key>
+							<string>Laser</string>
+							<key>density</key>
+							<real>1</real>
+							<key>fixtureID</key>
+							<integer>0</integer>
+							<key>friction</key>
+							<real>0.0</real>
+							<key>mask</key>
+							<integer>65529</integer>
+							<key>maskName</key>
+							<string>LaserCollision</string>
+							<key>name</key>
+							<string>GenericFixture</string>
+							<key>restitution</key>
+							<real>0.0</real>
+							<key>sensor</key>
+							<false/>
+						</dict>
+						<key>gravityScale</key>
+						<real>0.0</real>
+						<key>linearDamping</key>
+						<real>0.0</real>
+						<key>linearVelocity</key>
+						<string>{0.000000, 0.000000}</string>
+						<key>shape</key>
+						<integer>5</integer>
+						<key>type</key>
+						<integer>2</integer>
+					</dict>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_GAME_WORLD_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{1.000000, 1.000000}</string>
+					<key>size</key>
+					<string>{25.000000, 25.000000}</string>
+					<key>spriteName</key>
+					<string>attack_blue</string>
+					<key>spriteUUID</key>
+					<string>68F65926-C419-48B8-8269-20BBE5779423</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>24AAD5BE-0016-47F7-B33F-F375F7F51087</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
+					<string>{0.763234, 0.530475}</string>
+					<key>imageFileName</key>
+					<string>SpaceObjectsSH.png</string>
+					<key>invisibleInEditor</key>
+					<false/>
+					<key>name</key>
+					<string>Asteroid</string>
+					<key>nodePhysics</key>
+					<dict>
+						<key>allowSleep</key>
+						<true/>
+						<key>angularDamping</key>
+						<real>0.0</real>
+						<key>angularVelocity</key>
+						<real>0.40000000596046448</real>
+						<key>bullet</key>
+						<false/>
+						<key>fixedRotation</key>
+						<false/>
+						<key>fixtureUUID</key>
+						<string>DAF49AF3-6419-4C3F-9C5D-64CA89E405D7</string>
+						<key>genericFixture</key>
+						<dict>
+							<key>category</key>
+							<integer>8</integer>
+							<key>categoryName</key>
+							<string>Asteroid</string>
+							<key>density</key>
+							<real>1</real>
+							<key>fixtureID</key>
+							<integer>0</integer>
+							<key>friction</key>
+							<real>0.5</real>
+							<key>mask</key>
+							<integer>65535</integer>
+							<key>maskName</key>
+							<string>AsteroidCollision</string>
+							<key>name</key>
+							<string>GenericFixture</string>
+							<key>restitution</key>
+							<real>1</real>
+							<key>sensor</key>
+							<false/>
+						</dict>
+						<key>gravityScale</key>
+						<real>0.0</real>
+						<key>linearDamping</key>
+						<real>0.0</real>
+						<key>linearVelocity</key>
+						<string>{0.000000, 0.000000}</string>
+						<key>shape</key>
+						<integer>5</integer>
+						<key>type</key>
+						<integer>2</integer>
+					</dict>
+					<key>nodeType</key>
+					<string>LHSprite</string>
+					<key>parentUUID</key>
+					<string>_GAME_WORLD_NODE_UUID_</string>
+					<key>relativeImagePath</key>
+					<string>published/</string>
+					<key>rotation</key>
+					<real>0.0</real>
+					<key>scale</key>
+					<string>{0.784995, 0.792724}</string>
+					<key>size</key>
+					<string>{117.000000, 117.000000}</string>
+					<key>spriteName</key>
+					<string>object_asteroid_03</string>
+					<key>spriteUUID</key>
+					<string>E9071532-817C-44B5-80E1-5BC644365225</string>
+					<key>tags</key>
+					<array>
+						<string>DEFAULT</string>
+					</array>
+					<key>uuid</key>
+					<string>6806CD3D-4D32-4ACB-9B3F-1E58E6EB9D2B</string>
+					<key>zOrder</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>alpha</key>
+					<real>255</real>
+					<key>anchor</key>
+					<string>{0.500000, 0.500000}</string>
+					<key>colorOverlay</key>
+					<string>{{1.000000, 1.000000}, {1.000000, 1.000000}}</string>
+					<key>generalPosition</key>
 					<string>{0.364409, 0.537478}</string>
 					<key>imageFileName</key>
 					<string>SpaceshipSH.png</string>
@@ -150,7 +326,7 @@
 						<key>fixedRotation</key>
 						<false/>
 						<key>fixtureUUID</key>
-						<string>9BA81D4F-B975-47AF-BF30-89A833BC3B28</string>
+						<string>E82743A7-1C27-4402-AABD-E3435ED7B765</string>
 						<key>genericFixture</key>
 						<dict>
 							<key>category</key>
@@ -512,7 +688,67 @@
 	</array>
 	<key>tracedFixtures</key>
 	<dict>
-		<key>9BA81D4F-B975-47AF-BF30-89A833BC3B28</key>
+		<key>B3B2C3AE-5968-400D-B0F5-BDFAB4DD5DBC</key>
+		<array>
+			<array>
+				<string>{8.25, 11.75}</string>
+				<string>{-9.25, 11.75}</string>
+				<string>{-10.25, -11.75}</string>
+				<string>{-9.75, -12.25}</string>
+				<string>{8.75, -12.25}</string>
+				<string>{10.75, -10.75}</string>
+				<string>{11.75, -9.25}</string>
+				<string>{11.75, 8.25}</string>
+			</array>
+			<array>
+				<string>{-11.75, 9.75}</string>
+				<string>{-12.25, -9.75}</string>
+				<string>{-10.25, -11.75}</string>
+				<string>{-9.25, 11.75}</string>
+			</array>
+		</array>
+		<key>DAF49AF3-6419-4C3F-9C5D-64CA89E405D7</key>
+		<array>
+			<array>
+				<string>{-52.25, -58.5}</string>
+				<string>{-53.25, -38}</string>
+				<string>{-58.25, -58}</string>
+				<string>{-57.75, -58.5}</string>
+			</array>
+			<array>
+				<string>{-29.25, -58.5}</string>
+				<string>{25.25, -58.5}</string>
+				<string>{52.25, -36.5}</string>
+				<string>{57.75, -26.5}</string>
+				<string>{57.75, 28.5}</string>
+				<string>{52.75, 36.5}</string>
+				<string>{43.75, 46.5}</string>
+				<string>{-48.75, -44}</string>
+			</array>
+			<array>
+				<string>{-51.25, 40.5}</string>
+				<string>{-58.25, 29}</string>
+				<string>{-58.25, -58}</string>
+				<string>{-53.25, -38}</string>
+				<string>{-39.25, 51.5}</string>
+			</array>
+			<array>
+				<string>{36.75, -53.5}</string>
+				<string>{43.75, -48}</string>
+				<string>{52.25, -36.5}</string>
+				<string>{25.25, -58.5}</string>
+			</array>
+			<array>
+				<string>{-28.25, 58}</string>
+				<string>{-39.25, 51.5}</string>
+				<string>{-53.25, -38}</string>
+				<string>{-48.75, -44}</string>
+				<string>{43.75, 46.5}</string>
+				<string>{34.75, 54}</string>
+				<string>{28.25, 58}</string>
+			</array>
+		</array>
+		<key>E82743A7-1C27-4402-AABD-E3435ED7B765</key>
 		<array>
 			<array>
 				<string>{-33.5, -6.5}</string>
