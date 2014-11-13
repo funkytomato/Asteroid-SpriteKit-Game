@@ -51,7 +51,8 @@
     LHNode* node = (LHNode*)[[self gameWorldNode] childNodeWithName:@"Spaceship"];
 
     CGFloat rotation;
-    rotation = [self calculateHeading:node amount:(0.785398163/*45deg*/)];
+    //calculate from pi?
+    rotation = [self calculateHeading:node amount:(+0.785398163/*45deg*/)];
     node.zRotation = rotation;
     
     NSLog(@"Rotating %@  %f degrees",node.name, rotation);
@@ -76,7 +77,8 @@
     
     CGFloat rotation = 0.0;
     rotation = node.zRotation;
-    CGFloat heading = 0.785398163 - rotation;
+   // CGFloat heading = 0.785398163 - rotation;
+    CGFloat heading = rotation;
     
     int f = 2;
     CGFloat fx = 0;
@@ -86,8 +88,6 @@
     fx = f * sin(heading);
     
     NSLog(@"Heading: %f  fx : %f  fy: %f",heading,fx,fy);
-    
-
     
     [node.physicsBody applyImpulse: CGVectorMake(fx,fy)];
 
